@@ -155,13 +155,13 @@ class ErrorCollectorTest < MiniTest::Test
       error = article.last_result_set.errors.first
       assert_equal "1337", error.id
 
-      assert_equal({}, error.about, nil)
-      assert_nil(error.status, nil)
-      assert_nil(error.code, nil)
-      assert_nil(error.title, nil)
-      assert_nil(error.detail, nil)
-      assert_equal({}, error.source, nil)
-      assert_equal({}, error.meta.attributes,nil)
+      assert_equal({}, error.about)
+      assert_nil(error.status)
+      assert_nil(error.code)
+      assert_nil(error.title)
+      assert_nil(error.detail)
+      assert_equal({}, error.source)
+      assert_equal({}, error.meta.attributes)
   end
 
 end
